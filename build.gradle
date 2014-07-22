@@ -14,13 +14,13 @@ allprojects {
     }
 
     group = 'uk.co.chrisjenx.paralloid'
-    version = '0.3.0'
+//    version = '0.3.0'
 
     ext.isReleaseVersion = has("release")
     if (isReleaseVersion) {
         ext.sonatypeRepo = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
     } else {
-        version += "-SNAPSHOT"
+//        version += "-SNAPSHOT"
         ext.sonatypeRepo = "https://oss.sonatype.org/content/repositories/snapshots/"
     }
 
